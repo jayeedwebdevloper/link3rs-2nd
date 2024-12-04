@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'ABCDiatype';
+    src: url('/fonts/abc-diatype-regular.otf') format('opentype'),
+        url('/fonts/abc-diatype-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('/fonts/HelveticaNeue-Bold-02.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.abcd {
+    font-family: 'ABCDiatype',
+        sans-serif;
+}
+
+.helve {
+    font-family: 'HelveticaNeueBold',
+        sans-serif;
+}
+
+.hiddenScroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    };
+    scrollbar-track-color: transparent;
+}
+
+.hiddenScroll {
+    overflow: -moz-hidden-unscrollable;
+    overflow-y: scroll;
+}
